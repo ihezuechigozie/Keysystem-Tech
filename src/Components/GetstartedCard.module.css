@@ -1,0 +1,286 @@
+body{
+    margin: 0;
+    color: var(--white-text);
+    font-family: var(--font-main);
+}
+
+.getStartedCont {
+  width: 100%;
+  background: radial-gradient(500px at 20% center,  #000080 0%, var(--dark-bg) 74%);
+  position: relative;
+  top: 310.5px;
+  z-index: 3;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  }
+
+  .getStartedWrapper {
+    padding: 2px; 
+    border-radius: 25px;
+    background: linear-gradient(
+      180deg,
+      #01B4DE -15.33%,
+      rgba(201, 201, 201, 0) 34.33%,
+      rgba(214, 214, 214, 0) 72%,
+      #01B4DE 102.33%
+    );
+    justify-self: center;
+    width: fit-content;
+    max-width: 100%;
+  }
+  
+  .getstartedCard {
+    border-radius: 23px;
+    background: linear-gradient(91.44deg, #030517 38.57%, #181B4D 118.56%);
+    box-shadow: 0px 4px 43px 0px #5C2FAE1A;
+    padding-left: 40px;
+    max-width: 1000px;
+    width: 82vw;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    z-index: 1;
+    
+  }
+
+.firstTextDiv {
+  min-width: 280px;
+  width: 710px;
+  z-index: 10;
+  /* border: 1px solid; */
+}
+
+.circleDiv {
+margin-left: 10px;
+margin-top: -100px;
+z-index: 10;
+}
+
+
+.circle1{
+  width: 643px;
+  height: 643px;
+  border-radius: 50%;
+  display: block;
+  justify-content: center;
+  z-index: 10;
+  background: radial-gradient(310px at 50% center, #000080 100%);
+}
+.circle2{
+    width: 543px;
+    height: 543px;
+    border-radius: 50%;
+    position: relative;
+    left: 50px;
+    top: 50px;
+    z-index: 10;
+    background: radial-gradient(310px at 50% center, #0D0D9F 100% );
+}
+.circle3{
+    width: 443px;
+    height: 443px;
+    border-radius: 50%;
+    position: relative;
+    left: 50px;
+    top: 50px;
+    z-index: 10;
+    background: radial-gradient(310px at 50% center, #2020AC 100%);
+}
+.circle4{
+    width: 343px;
+    height: 343px;
+    position: relative;
+    left: 50px;
+    top: 50px;
+    border-radius: 50%;
+    z-index: 10;
+    background: radial-gradient(140px at 50% center, #3838C9 100%);
+}
+  .heading {
+    /* border: 1px solid; */
+    font-size: var(--medium-text);
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 3%;
+    
+  }
+  
+  .subHeading {
+    font-size: var(--smaller-text);
+    color: #aaa;
+  }
+  
+  .bodyText1,
+  .bodyText2 {
+    font-size: var(--small-text-2);
+    line-height: 150%;
+    letter-spacing: 3%;
+    
+  }
+  
+  .getstartedCardBtn {
+    width: 316px;
+    height: 72px;
+    gap: 10px;
+    margin-top: 20px;
+    border-radius: 37px;
+    border-width: 2px;
+    padding-top: 18px;
+    padding-right: 40px;
+    padding-bottom: 18px;
+    padding-left: 40px;
+  }
+  .iconArrowRight {
+    position: relative;
+    top: 4px;
+    left: 3px;
+  }
+@media (max-width: 575.98px) {
+  .getStartedCont{
+    width: 100%;
+    top: 150px;
+    justify-self: center;
+    justify-content: center;
+  }
+  .getstartedCard { 
+    /* width: 80vw; */
+    width: 100%;
+    height: auto;
+    padding-bottom: 29px;
+    padding-left: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+
+  }
+  .getStartedWrapper{
+    width: 80%;
+  }
+  .firstTextDiv {
+    justify-self: center;
+    justify-content: center;
+    
+  }
+  .circleDiv {
+    display: none;
+  }
+  .heading{
+    width: 250px;
+    justify-self: center;
+  }
+  .subHeading{
+    width: 250px;
+    justify-self: center;
+  }
+  .bodyText1,
+  .bodyText2 {
+    font-size: var(--smaller-texttext);
+    width: 250px;
+    justify-self: center;
+  }
+  .getstartedCardBtn{
+    width: 230px;
+    font-size: var(--smaller-text);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 60px;
+  }
+ 
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .getStartedCont{
+    width: 100%;
+    top: 150px;
+    justify-self: center;
+    justify-content: center;
+  }
+  .getstartedCard { 
+    /* width: 80vw; */
+    width: 100%;
+    height: auto;
+    padding-bottom: 29px;
+    padding-left: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+
+  }
+  .getStartedWrapper{
+    width: 80%;
+  }
+  .firstTextDiv {
+    justify-self: center;
+    justify-content: center;
+    padding-left: 40px;
+  }
+  .circleDiv {
+    display: none;
+  }
+  .heading{
+    width: 600px;
+    /* justify-self: center; */
+  }
+  .subHeading{
+    width: 250px;
+    /* justify-self: center; */
+  }
+  .bodyText1,
+  .bodyText2 {
+    font-size: var(--smaller-texttext);
+    width: 500px;
+    /* justify-self: center; */
+  }
+  .getstartedCardBtn{
+    width: 230px;
+    font-size: var(--smaller-text);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 60px;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+ 
+  @media (max-width: 1100px) {
+      .firstTextDiv{
+        width: 640px;
+      }
+      .circleDiv {
+        margin-left: -80px;
+        margin-top: -100px;
+        z-index: 0;
+        }
+  }
+  @media (max-width: 768px) {
+    .getstartedCard {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .firstTextDiv {
+      text-align: center;
+    }
+  
+    .circleDiv {
+      margin-top: 30px;
+    }
+  }
+  
+

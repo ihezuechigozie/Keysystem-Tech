@@ -1,0 +1,71 @@
+
+body{
+  margin: 0;
+}
+
+.scrollEffect {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: #050617;
+    position: relative;
+    top: 375px;
+    gap: 10px;
+  }
+  .scrolldiv {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+    gap: 31.11px;
+    align-items: center;
+    margin: 40px;
+    overflow: hidden;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .logo {
+    width: 188.4px;
+    height: 75.1px;
+    border-radius: 4.79px;
+  }
+
+@media (max-width: 575.98px) {
+    .scrollEffect{
+      top: 320px;
+    }
+    .logo{
+      width: 140px;
+      
+    }
+    .scrolldiv{
+      gap: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .scrollEffect{
+      top: 230px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+ 
+}
+
+@media (min-width: 1200px) {
+
+}
+
+  

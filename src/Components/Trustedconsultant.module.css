@@ -1,0 +1,218 @@
+
+body{
+  margin: 0;
+  color: var(--white-text);
+  font-family: var(--font-main);
+}
+.genContainer{
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 400px;
+  padding-bottom: 100px;
+  z-index: 3;
+  background: radial-gradient(680px at 50% bottom,  var(--blue-main) 2%, var(--dark-bg) 95%);
+}
+.gridOverlay {
+  width: auto;
+  height: 820px;
+  position: relative;
+  top: 75px;
+  border-top: 0.5px solid #1E245C;
+  background-image: 
+    linear-gradient(90deg, #1E245C 0.5px, transparent 0.2px),
+    linear-gradient(0deg, #1E245C 0.5px, transparent 0.2px);
+  opacity: 0.3;
+  background-size: 135px 135px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.diamondShapes {
+ position: absolute;
+ /* border: 1px solid; */
+  top: 0px;
+  left: 0;
+  display: block;
+  justify-content: center;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.diamond1,
+.diamond2,
+.diamond3{
+  width: 22px; 
+  height: 22px;
+  position: absolute;
+  background: #1E245C;
+  opacity: 0.3;
+  transform: rotate(45deg);
+  border-radius: 1px;
+  z-index: 0;
+}
+.diamond4,
+.diamond5{
+  width: 22px; 
+  height: 22px;
+  position: absolute;
+  transform: rotate(45deg);
+  border-radius: 2px;
+  z-index: 0;
+  width: 65px;
+  height: 65px;
+  border: 1px solid #1E245C;
+  opacity: 0.3;
+}
+.diamond4{
+  top: 312px;
+  left: 1048px;
+  
+
+}
+.diamond5{
+  top: 583px;
+ left: 103px;
+ 
+}
+.diamond1 {
+  top: 335px;
+  left: 395px;
+
+}
+.diamond2 {
+  top: 335px;
+  left: 1070px;
+}
+.diamond3 {
+  top: 604px;
+ left: 124px;
+}
+.textContainer {
+  /* border: 1px solid; */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.heading {
+  font-size: var(--medium-text);
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+.subheading {
+  font-size: var(--smaller-text);
+  color: #BBBBBB;
+  margin-bottom: 1rem;
+}
+
+.bodyText {
+  font-size: var(--small-text-2);
+  color: #D2D2D2;
+  max-width: 1000px;
+  width: 680px;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.cta {
+  /* border: 1px solid; */
+  font-size: var(--smaller-text);
+  color: #BBBBBB;
+  margin-bottom: 2rem;
+}
+
+.imageCard {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 16px;
+  overflow: hidden;
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.imageCard img {
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: 10;
+}
+
+@media (max-width: 575.98px) {
+ 
+  .heading{
+    width: 100%;
+  }
+  .genContainer{
+    width: auto;
+    height: 920px;
+    top: 280px;
+  }
+  .gridOverlay{
+    height: 800px;
+  }
+  .subheading{
+    width: 90%;
+  }
+  .bodyText{
+    width: 96%;
+  }
+  .cta{
+    width: 100%;
+  }
+  .diamond1,
+  .diamond2,
+  .diamond3,
+  .diamond4,
+  .diamond5{
+    display: none;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+     .genContainer{
+      top: 240px;
+      height: 750px;
+     }
+     .gridOverlay{
+      top: 50px;
+      height: 670px;
+     }
+     .textContainer{
+      padding: 2.5rem 0.5rem;
+      width: 86%;
+     }
+     .heading{
+      font-size: var(--small-text);
+     }
+     .subheading{
+       font-size: var(--smaller-text);
+       
+     }
+     .bodyText{
+       font-size: 18px;
+     }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+

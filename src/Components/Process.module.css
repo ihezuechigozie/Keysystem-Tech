@@ -1,0 +1,336 @@
+body{
+    margin: 0;
+    font-family: var(--font-main);
+    color: var(--white-text);
+}
+.processDiv{
+    width: 86%;
+    position: relative;
+    top: 80px;
+    justify-self: center;
+}
+.heading{
+    width: 300px;
+    font-weight: 700;
+    font-size: var(--medium-text);
+    line-height: 110%;
+    letter-spacing: 3%;
+    text-align: center;
+    justify-self: center;
+}
+.subHeading{
+    width: 560px;
+    font-weight: 400;
+    font-size: var(--small-text-2);
+    line-height: 110%;
+    letter-spacing: 3%;
+    text-align: center;
+    justify-self: center;
+    margin-top: 30px;
+}
+.boxDiv{
+    width: 100%;
+    /* height: 585px; */
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+    gap: 40px;
+}
+.box1{
+    width: 100%;
+    height: 223px;
+    /* height: 243px; */
+    border-radius: 10px;
+    /* border: 1px solid; */
+    overflow: hidden;
+    background: linear-gradient(91.44deg, #04050B 38.57%, #181B4D 118.56%);
+}
+.boxText{
+    width: 520px;
+    /* border: 1px solid; */
+    position: relative;
+    top: 60px;
+    left: 51px;
+    display: flex;
+    flex-direction: column;
+    gap: 26.9px;
+    
+
+}
+.bodyText1{
+    width: 635px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: var(--small-text);
+    line-height: 119%;
+    letter-spacing: 3%;
+
+}
+.bodyText2{
+    width: 490px;
+    /* height: 72px; */
+    font-weight: 400;
+    font-size:var(--small-text-2);
+    text-decoration: none;
+    line-height: 119%;
+    letter-spacing: 3%;
+    text-decoration: none;
+    
+}
+.image1{
+    width: 285px;
+    /* height: 322px; */
+    /* border: 1px solid; */
+    margin-top: -105px;
+    margin-left: 762px;
+    justify-content: center;
+    
+}
+.box2{
+    width: 100%;
+    /* border: 1px solid; */
+    /* height: 302px; */
+    height: 282px;
+    display: flex;
+    gap: 40px;
+
+}
+.flexDiv{
+    width: 588px;
+    height: 282px;
+    border-radius: 10px;
+    background: linear-gradient(108.32deg, #04040A 12.9%, #13163C 89.07%);
+    display: flex;
+    overflow: hidden;
+   
+}
+.boxText1{
+    width: 330px;
+    height: 140px;
+    position: relative;
+    top: 70.05px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 16.9px;
+}
+.boxText2{
+    width: 292px;
+    height: 100px;
+   position: relative;
+    top: 70.05px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 16.9px;
+    
+}
+.flexBoxText1{
+font-weight: 700;
+font-size: var(--small-text);
+line-height: 115%;
+letter-spacing: 3%;
+width: 215px;
+text-decoration: none;
+
+}
+.flexBoxText2{
+    font-weight: 400;
+    font-size: var(--small-text-2);
+    line-height: 115%;
+    letter-spacing: 3%;
+    width: 320px;
+    text-decoration: none;
+}
+.image2{
+    width: 342px;
+    height: 230.6px;
+    margin-top: 53px;
+    margin-left: -45px;
+}
+.image3{
+    width: 220px;
+    height: 220px;
+    margin-top: 93px;
+    margin-left: -9px;
+    
+}
+
+@media (max-width: 575.98px) {
+   .processDiv{
+    width: 86%;
+   }
+     .box1{
+        display: flex;
+        flex-direction: column;
+        height: 240px;
+        width: 100%;
+     }
+    
+    .boxText{
+       width: 91%;
+       top: 25px;
+       left: 25px;
+    }
+    .bodyText1{
+        font-size: 24px;
+        width: 94%;  
+    }
+    .bodyText2{
+        font-size: var(--smaller-text);
+        width: 92%;
+    }
+    .image1{
+        height: auto;
+        width: 130px;
+        margin-top: 25px;
+        margin-left: 220px;
+        justify-content: center;
+        
+    }  
+    .box2{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .flexDiv{
+        height: 240px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .boxText1{
+       width: 91%;
+       top: 25px;
+       left: 25px;
+       
+    }
+    .boxText2{
+        width: 91%;
+        top: 35px;
+       left: 25px;
+    }
+   .flexBoxText1{
+      width: 180px;
+      font-size: 24px;
+    }
+   .flexBoxText2{
+    width: 250px;
+    line-height: 120%;
+    font-size: var(--smaller-text);
+   }
+  
+   .image2{
+    width: 150px;
+    height: auto;
+    margin-top: -50px;
+    margin-left: 200px;
+    justify-content: center;
+   }
+   .image3{
+    height: auto;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 200px;
+   }
+   .subHeading{
+     width: 220px;
+   }
+     
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+  
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .processDiv{
+      width: 86%;
+    }
+    .box1{
+        display: flex;
+        flex-direction: column;
+        height: 240px;
+        width: 100%;
+     }
+    
+    .boxText{
+       width: 100%;
+       top: 25px;
+       left: 25px;
+    }
+    .bodyText1{
+        font-size: 24px;
+        width: 100%;  
+    }
+    .bodyText2{
+        font-size: var(--smaller-text);
+        width: 86%;
+    }
+    .image1{
+        height: auto;
+        width: 130px;
+        margin-top: 48px;
+        margin-left: 530px;
+        justify-content: center;
+        
+    }  
+    .box2{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .flexDiv{
+        height: 240px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .boxText1{
+       width: 100%;
+       top: 25px;
+       left: 25px;
+       
+    }
+    .boxText2{
+        width: 100%;
+        top: 35px;
+       left: 25px;
+    }
+   .flexBoxText1{
+      width: 280px;
+      font-size: 24px;
+    }
+   .flexBoxText2{
+    width: 500px;
+    line-height: 120%;
+    font-size: var(--smaller-text);
+   }
+  
+   .image2{
+    width: 150px;
+    height: auto;
+    margin-top: -50px;
+    margin-left: 510px;
+    justify-content: center;
+   }
+   .image3{
+    height: auto;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 515px;
+   }
+
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+ 
+  }
+  
+  @media (min-width: 1200px) {
+
+  }
+  

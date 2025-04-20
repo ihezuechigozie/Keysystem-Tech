@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+}
+
+.logoContainer {
+    /* border: 1px solid #fff; */
+    width: 160.55px;
+    height: 57.04px;
+    position: relative;
+    top: -9px;
+    display: block;
+    justify-content: center;
+    cursor: pointer;
+  }
+a{
+  text-decoration: none;
+}
+  .logo {
+    width: 65.55px;
+    height: 26.94px;
+    position: relative;
+    top: 25px;
+    Left:0px;
+  }
+  
+  .keySystem {
+    font-family: var(--font-alt);
+    font-size: 28.74px;
+    color: var(--blue-main);
+    text-align: center;
+    width: 161px;
+    height: 40px;
+    position: relative;
+    left: 10px;
+    top: -22px;
+    font-weight: 400;
+    line-height: 119%;
+    letter-spacing: 3%;
+    z-index: 20;
+  }
+  .key{
+    text-decoration: none;
+    color: var(--white-text);
+    z-index: 20;
+  }
+  
+  .techLtd {
+    width: 99px;
+    height: 14px;
+    position: relative;
+    font-family: var(--font-main);
+    top: -30px;
+    left: 66px;
+    font-weight: 400;
+    font-size: 8.8px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--blue-main);
+    text-align: center;
+  }
+
+  @media (max-width: 575.98px) {
+     .logoContainer{
+       height: 50px;
+       align-items: center;
+     }
+     .logo{
+      top: 18px;
+     }
+     .keySystem{
+         top: -29px;
+     }
+     .techLtd{
+      top: -37px;
+     }
+      
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .logoContainer{
+      top: 0px;
+      
+    }
+  }

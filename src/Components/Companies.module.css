@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    color: var(--white-text);
+    font-family: var(--font-main);
+}
+.companiesCont{
+    width: 86%;
+    position: relative;
+    top: 570.6px;
+    justify-content: center;
+    justify-self: center;
+}
+.header{ 
+    width: 882px;
+    gap: 19px;
+    text-align: center;
+    justify-self: center;
+}
+
+.heading{
+    width: 610px;
+    font-weight: 700;
+    font-size: var(--medium-text);
+    line-height: 150%;
+    letter-spacing: 3%;
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+
+}
+.subheading{
+    width: 470px;
+    font-weight: 400;
+    font-size: var(--smaller-text);
+    line-height: 150%;
+    letter-spacing: 3%;
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+
+}
+.btnBtn{
+    width: 216px;
+    height: 72px;
+    gap: 10px;
+    border-radius: 37px;
+    border-width: 2px;
+    padding-top: 18px;
+    padding-right: 30px;
+    padding-bottom: 18px;
+    padding-left: 30px;
+    box-shadow: 0px 4px 17.9px 0px #4169E18C;
+    display: block;
+    justify-self: center;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+
+.logoDiv {
+    width: 86%;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .gridBox {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .logoImage {
+    max-width: 160px;
+    max-height: 120px;
+    width: 100px;
+    object-fit: contain;
+  }
+  .iconArrowRight {
+    position: relative;
+    top: 4px;
+    left: 3px;
+  }
+  
+@media (max-width: 768px) {
+    .logoImage {
+      max-width: 100px;
+      max-height: 80px;
+    }
+  }
+  
+@media (max-width: 575.98px) {
+     .companiesCont{
+        top: 260px;
+     }
+     .heading{
+        font-size: var(--small-text);
+        width: 300px;
+    }
+    .subheading{
+        width: 250px;
+    }
+    .logoImage{
+        max-width: 130px;
+        max-height: 70px;
+        width: 80px;
+    }
+    .gridBox{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .btnBtn{
+        width: 200px;
+        height: auto;
+    }
+ 
+   
+}
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+  }
+  
+ 
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .companiesCont{
+      top: 260px;
+   }
+   .heading{
+      font-size: var(--small-text);
+      width: 90%;
+  }
+  .subheading{
+      width: 600px;
+  }
+  .logoImage{
+      max-width: 130px;
+      max-height: 70px;
+      width: 80px;
+  }
+  .gridBox{
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+  }
+  .btnBtn{
+      width: 200px;
+      height: auto;
+  }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+   
+  }
+
+  @media (min-width: 1200px) {
+   
+  }
+  

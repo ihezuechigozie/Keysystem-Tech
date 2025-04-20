@@ -1,0 +1,130 @@
+
+body{
+    margin: 0;
+    font-family: var(--font-main);
+    color: var(--white-text);
+}
+.servicesCont {
+    background: #030517;
+    position: relative;
+    top: 310px;
+    padding: 3rem;
+    font-size: var(--small-text-2);
+    line-height: 1.6;
+    z-index: 20;
+
+  }
+  
+  .gridBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  a {
+    color: var(--white-text);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+  }
+  
+  li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+  
+  .socialIcons img {
+    width: 24px;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .socialIcons img:hover {
+    transform: scale(1.1);
+  }
+  .scrollTopButton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--hover-text);
+    color: white;
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 800;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  .copyright{
+    width: 14px;
+  }
+  
+  .scrollTopButton:hover {
+    background-color: var(--dark-bg);
+    transform: translateY(-3px);
+  }
+  @media (max-width:1100px) {
+    .gridBox{
+      width: 100%;
+      height: auto;
+      justify-self: center;
+    }
+   
+    .servicesCont{
+      height: auto;
+      top: 310px;
+      z-index: 20;
+      padding-bottom: 22rem;
+    }
+    .scrollTopButton{
+      display: none;
+      right: 0px;
+      bottom: 0px;
+      padding: 0px;
+    }
+     
+  }
+  
+@media (max-width: 575.98px) {
+   .servicesCont{
+     top: 140px;
+     padding-bottom: 8rem;
+   }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .gridBox{
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    font-size: var(--smaller-text);
+  }
+ 
+  .servicesCont{
+    height: auto;
+    top: 120px;
+    z-index: 20;
+    padding-bottom: 29rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+

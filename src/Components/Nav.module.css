@@ -1,0 +1,234 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: var(--white-text); 
+} 
+header {
+  max-width: 1200px;
+  width: 100%;
+}
+.menuToggle div {
+  width: 30px;
+  height: 3px;
+}
+
+.navBar {
+  width: 100%;
+  height: var(--nav-height);
+  background: linear-gradient(
+    90.18deg,
+    var(--dark-bg) 50.58%,
+    #000080 79.08%,
+    #111A89 90.72%
+  );
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  text-decoration: none;
+  /* border: 1px solid; */
+}
+.navHide {
+  transform: translateY(-100%);
+}
+.navShow {
+  transform: translateY(0);
+}
+
+.logoAnchorTag:hover{
+  text-decoration: none;
+}
+.logoAnchorTag{
+  text-decoration: none;
+}
+
+.navHolder{
+  width: 86%;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  /* border: 1px solid; */
+}
+.faChevronDown{
+width: 16px;
+height: 12.62px;
+margin-top: 7.43px;
+margin-left: 5.62px;
+border-width: 1.87px;
+}
+.navList {
+display: flex;
+gap: 3.5rem;
+list-style: none;
+width: 478.48px;
+height: 30px;
+margin: 0;
+padding: 0;
+position: relative;
+padding-top: 6px;
+/* border: 1px solid; */
+/* top: 15px; */
+align-items: center;
+text-align: center;
+justify-content: center;
+list-style: none;
+text-decoration: none;
+
+}
+.activeLink {
+  color: var(--hover-text); 
+  font-weight: 400;
+}
+.navList.active {
+  transform: scaleY(1);
+}
+
+.navList a {
+color: var(--lwhite-text);
+text-decoration: none;
+font-size: var(--smaller-text);
+position: relative;
+transition: color 0.3s ease;
+}
+.navList a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px; 
+  width: 0;
+  height: 2px;
+  background-color: var(--light-text);
+  transition: width 0.4s ease;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.navList a:hover::after {
+  width: 100%;
+}
+
+.navList a:hover {
+color: var(--light-text);
+text-decoration: none;
+}
+
+.navButton {
+padding: 0.75rem 2rem;
+box-shadow: var(--nav-shadow);
+text-decoration: none;
+
+}
+
+.navButton:hover {
+  background-color: var(--blue-main);
+} 
+.navButton a:hover{
+  text-decoration: none;
+}
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menuToggle div {
+  width: 25px;
+  height: 3px;
+  background: #FFF;
+}
+
+@media (max-width: 575.98px) {
+.navBar{ 
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+  .navHolder{
+    margin: 15px;
+    height: auto;
+    width: 86%;
+    flex-direction: column;
+    gap: 30px;
+   
+  }
+  
+  .menuToggle {
+    display: flex;
+    margin-top: 10px;
+  }
+  .menuWithBtn{
+    display: flex;
+    width: 100%;
+    justify-self: center;
+    justify-content: space-between; 
+  }
+  
+  .navList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 1rem;
+    margin: 0;
+    padding: 1rem 1.5rem;
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    transform: none;
+  }
+  .navButton{
+    margin-top: 30px;
+    padding: 0.6rem 1rem;
+    font-size: 14px;
+    
+  }
+ 
+
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .navBar{
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  
+  .navList{
+    gap: 1rem;
+    width: auto;
+  }
+  .navButton{
+    padding: 0.3rem 1rem;
+    font-size: 14px;
+    width: 180px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+   
+    .navList{
+      gap: 2rem;
+      width: auto;
+    }
+    .navButton{
+      padding: 0.75rem 1.7rem;
+    }
+   
+}
+
+@media (min-width: 1200px) {
+  .navBar{
+    width: 100%;
+  }
+}

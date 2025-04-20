@@ -1,0 +1,234 @@
+
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: var(--white-text);
+  z-index: 0;
+}
+
+.heroSection {
+  width: 100%;
+  height: 817px;
+  position: relative;
+  top: 75px;
+  display: block;
+  /* border: 1px solid; */
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  background: radial-gradient(700px at 98% top, #000080 54%, var(--dark-bg) 98%);
+}
+
+.gridOverlay {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 817px;
+  /* border: 1px solid; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 0;
+}
+.gridBox {
+  /* border: 1px solid; */
+  width: 9%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid rgba(255, 255, 255, 0.031);
+}
+
+.highlighted {
+  background-color: rgba(255, 255, 255, 0.057);
+}
+
+.content {
+  display: flex;
+  /* border: 1px solid; */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-self: center;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  top: 75px;
+  max-width: 86%;
+}
+
+.tagline {
+  width: 270.3px;
+  /* border: 1px solid; */
+  gap: 3.54px;
+  border-width: 0.87px;
+  border-radius: 84.93px;
+  background: #2e6d9c;
+  border: 0.87px solid var(--white-text);
+  display: block;
+  justify-self: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 400;
+  font-size: 19.83px;
+  line-height: 119%;
+  letter-spacing: 3%;
+  text-align: center;
+  z-index: 10;
+}
+
+.h1 {
+  /* border: 1px solid; */
+  font-weight: 700;
+  font-size: var(--big-text);
+  line-height: 105%;
+  text-align: center;
+  margin: 30px 0 0 0;
+  width: 100%;
+}
+
+.p {
+  /* border: 1px solid; */
+  font-size: var(--small-text-2);
+  margin: 20px 0;
+  width: 780px;
+  letter-spacing: 3%;
+  line-height: 119%;
+}
+a:hover{
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 45px;
+  margin-top: 30px;
+  width: 830px;
+  height: 72px;
+}
+
+.iconArrowRight {
+  position: relative;
+  top: 4px;
+  left: 3px;
+}
+
+.btnPrimary,
+.btnSecondary {
+  width: 270px;
+  height: 72px;
+  border-width: 2px;
+  border-radius: 37px;
+  padding-top: 18px;
+  padding-right: 30px;
+  padding-bottom: 18px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .heroSection{
+    width: 100%;
+  }
+  .gridOverlay{
+    width: 100%;
+  }
+ 
+  .h1 {
+    font-size: 45px;
+  }
+
+  .p {
+    font-size: 24px;
+  }
+
+  .buttons {
+    width: 690px;
+    height: auto;
+  }
+}
+@media (max-width:950px) {
+  .heroSection{
+    top: 70px;
+  } 
+}
+@media (max-width: 768px) {
+  .heroSection {
+    height: 600px;
+  }
+
+  .content {
+    top: 0px;
+    max-width: 95%;
+  }
+
+  .tagline {
+    width: 180px;
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .h1 {
+    font-size: 48px;
+  }
+
+  .p {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .buttons {
+    gap: 15px;
+    width: 320px;
+  }
+
+  .btnPrimary,
+  .btnSecondary {
+    width: 160px;
+  }
+}
+
+@media (max-width: 579px) {
+  .heroSection {
+    height: auto;
+
+  }
+  .content {
+    top: 70px;
+    max-width: 95%;
+  }
+
+  .tagline {
+    width: 150px;
+    font-size: 10px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .h1 {
+    font-size: 40px;
+  }
+
+  .p {
+    font-size: 16px;
+    width: 300px;
+  }
+
+  .buttons {
+    gap: 30px;
+    width: 250px;
+    font-size: 14px;
+  }
+
+  .btnPrimary,
+  .btnSecondary {
+    width: 220px;
+    height: 60px;
+  }
+}
