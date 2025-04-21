@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import style from './Trustedconsultant.module.css';
-import groupImage from '../assets/assurance svg.svg';
+import groupImage from '../assets/group1.svg';
 
 const Trustedconsultant = () => {
   return (
